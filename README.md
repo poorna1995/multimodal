@@ -20,3 +20,19 @@ As training proceeds, the inputs to each layer can shift — a phenomenon called
 Layer Normalisation adjusts the output of a neural network layer so that it has  
 **mean = 0** and **variance = 1** (before applying learned scaling and shifting).  
 This results in faster and more stable convergence.
+
+Output :
+These vectors now encode:
+
+1. what is in each patch
+2. how it related to other patches
+3. global context
+4. spatial meaning
+   The transformer has converted the image into a sequence of high-level feature embeddings.
+   These embeddings can be used for:
+
+5. classification
+6. object detection
+7. segmentation
+8. multimodal models (CLIP, SigLip)
+9. image-text matching
